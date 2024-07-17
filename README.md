@@ -9,7 +9,6 @@ I completed some TF code that should make lives easier.  It builds all the basic
 
 It's modularized, so the root main.tf file is used to provide different variables if needed, but there's a default provided for almost everything.
 
-Find the public repo here: https://github.com/chad-neal/avdtf-with-modules.
 -----
 
 In the root main.tf you'll find variable declarations in module blocks.
@@ -20,7 +19,8 @@ Specify them in the root to change what the defaults are set to.
 
 Or don't, if you're happy with what I've done.  
 
-Comment out, or delete, the module blocks that you don't need/want to use.  
+Comment out, or delete, the module blocks that you don't need/want to use. 
+
 --------
 
 "Terraform apply" is looking at the root main.tf, then reading each of the child modules' configurations to decide which resources to build.
